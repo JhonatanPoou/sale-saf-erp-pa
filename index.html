@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador Web App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="Logo.png" alt="Logo">
+    <h1>Cotizador Web App</h1>
+  </header>
+  <main>
+    <div id="scenario-buttons">
+      <button onclick="loadScenario(1)">Escenario 1</button>
+      <button onclick="loadScenario(2)">Escenario 2</button>
+      <button onclick="loadScenario(3)">Escenario 3</button>
+      <button onclick="loadScenario(4)">Escenario 4</button>
+      <button onclick="loadScenario(5)">Escenario 5</button>
+      <button onclick="addCustomRow()">Añadir Fila Personalizada</button>
+    </div>
+
+    <div id="custom-config"></div>
+
+    <table id="price-table">
+      <thead>
+        <tr>
+          <th>Puesto</th>
+          <th>Licencia</th>
+          <th>Precio Unitario</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="price-table-body"></tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
